@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-sm bg-primary navbar-toggleable-sm navbar-dark box-shadow mb-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">CineComplex</a>
+            <a class="navbar-brand" routerLink="/home">CineComplex</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
                 aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -18,16 +18,13 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                            aria-haspopup="true" aria-expanded="false">Content</a>
-                        <ul class="dropdown-menu aria" labelledby="navbarDropdown">
-                            
-                            <li><a class="dropdown-item" >Coupons</a></li>
+                            id="navbarDropdown" aria-expanded="false">Content</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" routerLink="/coupons">Coupons</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" >Shows</a></li>
+                            <li><a class="dropdown-item" routerLink="/shows">Shows</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" >Cineplex</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            
+                            <li><a class="dropdown-item" routerLink="/cineplex">Cineplex</a></li>
                         </ul>
                     </li>
                 </ul>
