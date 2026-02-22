@@ -1,0 +1,73 @@
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+  <div class="card shadow-lg" style="max-width: 600px; width: 100%;">
+    <div class="card-header text-center">
+      <h3>Register</h3>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+        <fieldset>
+          <legend class="mb-3">User Information</legend>
+
+          <!-- User Name -->
+          <div class="mb-3">
+            <label for="username" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="username" placeholder="User name">
+          </div>
+
+          <!-- Contact -->
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" id="contact" placeholder="Contact number">
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+
+          <!-- Password -->
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="off">
+          </div>
+
+          <!-- Terms -->
+          <fieldset>
+            <legend class="mt-4">Checkboxes</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="terms">
+              <label class="form-check-label" for="terms">
+                I read & accept the terms and conditions.
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Buttons -->
+          <div class="mt-4 d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="registerToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        ✅ Registration successful!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<form >
+  <!-- your form fields here -->
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
