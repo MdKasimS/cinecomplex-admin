@@ -1,1 +1,17 @@
+// 1. Import bootstrap functions first
+// @import "bootstrap/scss/functions";
+
+// 2. Import bootswatch variables
+// @import "bootswatch/dist/solar/variables";
+
+// 3. Import bootstrap core
+// @import "bootstrap/scss/bootstrap";
+
+// 4. Import bootswatch theme styles
+// @import "bootswatch/dist/solar/bootswatch";
+
 /* You can add global styles to this file, and also import other style files */
+
+@use "bootstrap";
+@use "bootswatch/dist/solar/bootstrap" as *;
+

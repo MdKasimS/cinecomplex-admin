@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "0e08811c-5427-4a23-aea5-65b39323e2f8"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -30,6 +31,8 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootswatch/dist/solar/bootstrap.min.css",
               "src/styles.scss"
             ]
           },
