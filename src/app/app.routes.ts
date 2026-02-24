@@ -7,7 +7,7 @@ export const routes: Routes = [
   { path: '', component: Home },
   { path: 'home', component: Home },
   { path: 'login', component: Login },
-  { path: 'register', component: Register },
+//   { path: 'register', component: Register },
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // default route
   { path: '**', redirectTo: '/login' }, // wildcard fallback
 ];
