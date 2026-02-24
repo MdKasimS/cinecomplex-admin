@@ -5,7 +5,6 @@ import * as bootstrap from 'bootstrap';
   selector: 'app-register',
   imports: [FormsModule],
   templateUrl: './register.html',
-  styleUrl: './register.scss',
 })
 export class Register {
 
