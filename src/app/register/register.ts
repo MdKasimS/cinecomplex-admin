@@ -19,7 +19,7 @@ export class Register {
   onSubmit() {
     console.log('Form submitted:', this.user);
     // TODO: Can we use here toast to show user registeration details instead of alert?
-    // Its available in used bootswatch theme. But I am not sure how to use it in angular. So, for now using alert.
+    // Its available in used bootswatch theme. But I am not sure how to use it in angular.
     // Show Bootstrap toast
     const toastEl = document.getElementById('registerToast');
     if (toastEl) {
